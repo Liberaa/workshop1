@@ -22,3 +22,10 @@ Detta är en enkel miniräknare byggd med HTML, CSS och JavaScript. Räknaren ka
 - `index.html` - Huvudsidan med HTML-struktur
 - `script.js` - JavaScript-logik för beräkningar
 - `style.css` - CSS
+
+
+## ATT GÖRA
+- Lägg till knappar 0-9
+- UI Som en miniräknare, buttons.
+- Fler Funktioner
+
