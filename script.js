@@ -1,6 +1,7 @@
 let num1 = document.querySelector('#num1')
 let num2 = document.querySelector('#num2')
 let operator = document.querySelector('#operation')
+let calculate = document.querySelector('#calculate')
 const result = document.querySelector('#result')
 
 function updateSum() {
@@ -11,6 +12,7 @@ function updateSum() {
 
   if (operation == 'add') {
     output = n1 + n2
+    clearTimeout(1000)
   } else if (operation == 'sub') {
     output = n1 - n2
   } else if (operation == 'mul') {
@@ -21,10 +23,10 @@ function updateSum() {
     } else {
       output = n1 / n2
     }
+  } else if (operation == 'power') {
+    output = n1 ** n2
   }
   result.textContent = 'Result: ' + output
 }
 
-
-num1.addEventListener('input', updateSum)
-num2.addEventListener('input', updateSum)
+calculate.addEventListener('click', updateSum)
